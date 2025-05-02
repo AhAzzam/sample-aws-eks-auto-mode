@@ -1,0 +1,5 @@
+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
+
+kubectl create secret generic hf-secret \
+  --from-literal=hf_api_token=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 \
+  -n vllm-inference
