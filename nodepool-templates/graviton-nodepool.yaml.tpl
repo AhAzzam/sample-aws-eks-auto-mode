@@ -35,6 +35,9 @@ spec:
         - key: "kubernetes.io/arch"
           operator: In
           values: ["arm64"]
+        - key: "karpenter.sh/capacity-type"
+          operator: In
+          values: ["spot", "on-demand"]
       taints:
         - key: "arm64"
           value: "true"

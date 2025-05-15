@@ -28,10 +28,7 @@ spec:
       requirements:
         - key: "eks.amazonaws.com/instance-family"
           operator: In
-          values: ["g5"]
-        - key: "eks.amazonaws.com/instance-size"
-          operator: In
-          values: [ "2xlarge", "4xlarge", "8xlarge", "12xlarge", "24xlarge", "48xlarge" ]
+          values: ["g3", "g4", "g5", "g6", "p3", "p4", "p5"]
         - key: "karpenter.sh/capacity-type"
           operator: In
           values: ["spot", "on-demand"]
