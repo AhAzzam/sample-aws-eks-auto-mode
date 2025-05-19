@@ -26,9 +26,12 @@ spec:
         kind: NodeClass
         name: gpu-nodeclass
       requirements:
-        - key: "eks.amazonaws.com/instance-family"
+        - key: "eks.amazonaws.com/instance-generation"
+          operator: Gt
+          values: ["2"]
+        - key: "eks.amazonaws.com/instance-category"
           operator: In
-          values: ["g3", "g4", "g5", "g6", "p3", "p4", "p5"]
+          values: ["g"]
         - key: "karpenter.sh/capacity-type"
           operator: In
           values: ["spot", "on-demand"]

@@ -11,6 +11,8 @@ spec:
         app: whisper-compile
     spec:
       restartPolicy: Never
+      nodeSelector:
+        karpenter.sh/nodepool: neuron-nodepool
       tolerations:
         - key: aws.amazon.com/neuron
           value: "true"

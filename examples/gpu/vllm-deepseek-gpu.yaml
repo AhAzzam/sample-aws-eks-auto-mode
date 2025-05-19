@@ -65,6 +65,8 @@ spec:
       - name: hf-secret-volume
         secret:
           secretName: hf-secret
+      nodeSelector:
+        karpenter.sh/nodepool: gpu-nodepool
       tolerations:
         - key: nvidia.com/gpu
           value: "true"

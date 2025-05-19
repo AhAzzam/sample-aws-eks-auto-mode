@@ -28,7 +28,7 @@ spec:
       requirements:
         - key: "eks.amazonaws.com/instance-family"
           operator: In
-          values: ["inf1", "inf2", "inf3"]
+          values: ["inf"]
         - key: "karpenter.sh/capacity-type"
           operator: In
           values: ["spot", "on-demand"]
