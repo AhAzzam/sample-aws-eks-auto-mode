@@ -26,7 +26,7 @@ spec:
         kind: NodeClass
         name: neuron-nodeclass
       requirements:
-        - key: "eks.amazonaws.com/instance-family"
+        - key: "eks.amazonaws.com/instance-category"
           operator: In
           values: ["inf"]
         - key: "karpenter.sh/capacity-type"

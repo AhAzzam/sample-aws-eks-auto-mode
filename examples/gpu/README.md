@@ -123,8 +123,9 @@ kubectl apply -f open-webui.yaml
 Set up the Network Load Balancer for external access:
 
 ```bash
-# Deploy NLB service
+# Deploy open-webui service
 kubectl apply -f lb-service.yaml
+
 ```
 
 > ⚠️ **Security Note**: The default configuration creates a GenAI public endpoint with unrestricted access. To enhance security by restricting access to your IP address only, modify the lb-service.yaml file to add the `loadBalancerSourceRanges` field:

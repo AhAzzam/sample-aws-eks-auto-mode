@@ -48,3 +48,4 @@ spec:
         effect: "NoSchedule"
       nodeSelector:
         kubernetes.io/arch: arm64
+        

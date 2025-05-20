@@ -28,7 +28,7 @@ spec:
       requirements:
         - key: "eks.amazonaws.com/instance-generation"
           operator: Gt
-          values: ["2"]
+          values: ["4"]
         - key: "eks.amazonaws.com/instance-category"
           operator: In
           values: ["g"]
